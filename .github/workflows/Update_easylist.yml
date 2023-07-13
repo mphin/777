@@ -20,9 +20,11 @@ jobs:
         run: |
           sed -i '/^.{1024,}/d' easylist.txt
           if diff --brief easylist.txt ${{ github.workspace }}/easylist.txt >/dev/null; then
+            echo "easylist.txt 文件一致"
             echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylist.txt 文件一致" >> ${{ github.workspace }}/log/log.txt
           else
             cp easylist.txt ${{ github.workspace }}/easylist.txt
+            echo "easylist.txt 文件已更新"
             echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylist.txt 文件已更新" >> ${{ github.workspace }}/README.md
           fi
 
