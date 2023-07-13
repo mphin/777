@@ -34,8 +34,11 @@ jobs:
               processed_lines=0
             fi
            echo "Files are the same. No action required."
-           echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - ADgk.txt 文件已更新，处理了 $processed_lines 行" >> ${{ github.workspace }}/log/log.txt
+           echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - ADgk.txt 文件无更新，处理了 $processed_lines 行" >> ${{ github.workspace }}/log/log.txt
           fi
+
+      - name: Clean up downloaded file
+        run: rm ADgk_downloaded.txt
 
       - name: Commit and push changes
         run: |
