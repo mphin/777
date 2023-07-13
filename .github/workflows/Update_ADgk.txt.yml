@@ -6,25 +6,35 @@ on:
       - main
 
 jobs:
-  process_adgk_file:
+  update-adgk:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout代码仓库内容
+      - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: 下载ADgk.txt文件
-        run: mkdir -p temp && cd temp && wget -q https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-
-      - name: 处理ADgk.txt文件
-        run: cd temp && sed '/^.\{1024,\}/d' ADgk.txt > ../ADgk.txt
-
-      - name: 同步远程仓库的最新更改
-        run: git pull
-
-      - name: 提交更改到仓库
+      - name: Download and process ADgk.txt
         run: |
-          git config --global user.name "Your Name"
-          git config --global user.email "youremail@example.com"
-          git commit -am "定时处理ADgk.txt文件"
+          curl -o adgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+          sed -i '/^.\{1024,\}/d' adgk.txt
+
+      - name: Compare files
+        id: compare
+        run: |
+          if ! cmp --silent adgk.txt ${{ github.workspace }}/ADgk.txt; then
+            echo "Files are different. Updating ADgk.txt"
+            mv adgk.txt ${{ github.workspace }}/ADgk.txt
+            echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - ADgk.txt file updated" >> ${{ github.workspace }}/log/log.txt
+          else
+            echo "Files are the same. No action required."
+            echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - Original file is identical. No action required" >> ${{ github.workspace }}/log/log.txt
+          fi
+
+      - name: Commit and push changes
+        if: ${{ steps.compare.outputs.returncode == 0 }}
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add ADgk.txt log/log.txt
+          git commit -m "Update ADgk.txt"
           git push
