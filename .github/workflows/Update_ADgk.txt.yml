@@ -15,7 +15,7 @@ jobs:
 
       - name: Download and process ADgk.txt
         run: |
-          curl -o adgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+          curl -o adgk.txt https://raw.githubusercontent.com/mphin/AdGuardHome_rules/main/777_Blacklist.txt
           sed -i '/^.\{1024,\}/d' adgk.txt
 
       - name: Compare files
