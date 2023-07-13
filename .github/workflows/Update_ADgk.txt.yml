@@ -19,6 +19,9 @@ jobs:
       - name: 处理ADgk.txt文件
         run: cd temp && sed '/^.\{1024,\}/d' ADgk.txt > ../ADgk.txt
 
+      - name: 同步远程仓库的最新更改
+        run: git pull
+
       - name: 提交更改到仓库
         run: |
           git config --global user.name "Your Name"
