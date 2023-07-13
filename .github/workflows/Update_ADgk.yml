@@ -20,7 +20,7 @@ jobs:
       - name: Compare files
         id: compare
         run: |
-          if ! cmp --silent ADgk_downloaded.txt ${{ github.workspace }}/ADgk.txt; then
+          if ! cmp --silent ADgk_filtered.txt ${{ github.workspace }}/ADgk.txt; then
            echo "Files are different. Updating ADgk.txt"
            mv ADgk_filtered.txt ${{ github.workspace }}/ADgk.txt
            processed_lines=$(grep -c '^.\{1024,\}' ADgk_downloaded.txt)
