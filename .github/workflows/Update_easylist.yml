@@ -14,25 +14,27 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Download easylist.txt
-        run: curl -o easylist.txt https://easylist-downloads.adblockplus.org/easylist.txt
+        run: curl -o easylist_1.txt https://easylist-downloads.adblockplus.org/easylist.txt
 
       - name: Process and compare easylist.txt
         run: |
-          sed -i '/^.{1024,}/d' easylist.txt
-          if ! cmp -s easylist.txt ${{ github.workspace }}/easylist.txt; then
-            cp easylist.txt ${{ github.workspace }}/easylist.txt
+          sed -i '/^.{1024,}/d' easylist_1.txt
+          if ! cmp -s easylist_1.txt ${{ github.workspace }}/easylist.txt; then
+            cp easylist_1.txt ${{ github.workspace }}/easylist.txt
             echo "easylist.txt 文件已更新"
             echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylist.txt 文件已更新" >> ${{ github.workspace }}/README.md
           else
             echo "easylist.txt 文件一致"
             echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylist.txt 文件一致" >> ${{ github.workspace }}/log/log.txt
-            
           fi
+
+      - name: Clean up downloaded file
+        run: rm easylist_1.txt
 
       - name: Commit and push changes
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add .
+          git add easylist.txt log/log.txt README.md
           git commit -m "Update easylist.txt"
           git push
