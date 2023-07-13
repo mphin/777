@@ -1,8 +1,9 @@
 name: 定时处理ADgk.txt文件
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
+  push:
+    branches:
+      - main
 
 jobs:
   process_adgk_file:
