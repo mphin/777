@@ -1,4 +1,4 @@
-name: 定时处理ADG规则
+name: 定时处理ADgk.txt
 
 on:
   push:
@@ -24,17 +24,17 @@ jobs:
            echo "Files are different. Updating ADgk.txt"
            mv adgk.txt ${{ github.workspace }}/ADgk.txt
            processed_lines=$(grep -c '^.\{1024,\}' ADgk.txt)
-           echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - ADgk.txt文件已更新，处理了 $processed_lines 行" >> ${{ github.workspace }}/README.md
+           echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - ADgk.txt 文件已更新，处理了 $processed_lines 行" >> ${{ github.workspace }}/README.md
           else
            echo "Files are the same. No action required."
-           echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - 原文件与本地一致，无需处理" >> ${{ github.workspace }}/log/log.txt
+           echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - ADgk.txt 文件已更新，处理了 $processed_lines 行" >> ${{ github.workspace }}/log/log.txt
           fi
 
       - name: Commit and push changes
         if: ${{ steps.compare.outputs.returncode == 0 }}
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add ADgk.txt log/log.txt README.md
           git commit -m "Update ADgk.txt"
           git push

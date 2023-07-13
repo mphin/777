@@ -1,0 +1,40 @@
+name: 定时处理easylist.txt
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Download and process easylist.txt
+        run: |
+         curl -o easylist.txt https://easylist-downloads.adblockplus.org/easylist.txt
+         sed -i '/^.\{1024,\}/d' easylist.txt
+
+      - name: Compare files
+        id: compare
+        run: |
+          if ! cmp --silent easylist.txt ${{ github.workspace }}/easylist.txt; then
+           echo "Files are different. Updating easylist.txt"
+           mv easylist.txt ${{ github.workspace }}/easylist.txt
+           processed_lines=$(grep -c '^.\{1024,\}' easylist.txt)
+           echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylist.txt 文件已更新，处理了 $processed_lines 行" >> ${{ github.workspace }}/README.md
+          else
+           echo "Files are the same. No action required."
+           echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylist.txt 文件已更新，处理了 $processed_lines 行" >> ${{ github.workspace }}/log/log.txt
+          fi
+
+      - name: Commit and push changes
+        if: ${{ steps.compare.outputs.returncode == 0 }}
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add easylist.txt log/log.txt README.md
+          git commit -m "Update easylist.txt"
+          git push
