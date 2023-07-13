@@ -20,7 +20,7 @@ jobs:
       - name: Compare files
         id: compare
         run: |
-          if ! cmp --silent easylist.txt ${{ github.workspace }}/easylist.txt; then
+          if diff -q easylist.txt ${{ github.workspace }}/easylist.txt >/dev/null; then
            echo "Files are different. Updating easylist.txt"
            mv easylist.txt ${{ github.workspace }}/easylist.txt
            processed_lines=$(grep -c '^.\{1024,\}' easylist.txt)
