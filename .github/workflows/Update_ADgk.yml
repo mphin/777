@@ -14,24 +14,30 @@ jobs:
 
       - name: Download and process ADgk.txt
         run: |
-         curl -o adgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-         sed -i '/^.\{1024,\}/d' ADgk.txt
+         curl -o ADgk_downloaded.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+         sed -i '/^.\{1024,\}/d' ADgk_downloaded.txt
 
       - name: Compare files
         id: compare
         run: |
-          if ! cmp --silent adgk.txt ${{ github.workspace }}/ADgk.txt; then
+          if ! cmp --silent ADgk_downloaded.txt ${{ github.workspace }}/ADgk.txt; then
            echo "Files are different. Updating ADgk.txt"
-           mv adgk.txt ${{ github.workspace }}/ADgk.txt
-           processed_lines=$(grep -c '^.\{1024,\}' ADgk.txt)
+           mv ADgk_downloaded.txt ${{ github.workspace }}/ADgk.txt
+           processed_lines=$(grep -c '^.\{1024,\}' ADgk_downloaded.txt)
+           if [ -z "$processed_lines" ]; then
+             processed_lines=0
+           fi
            echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - ADgk.txt 文件已更新，处理了 $processed_lines 行" >> ${{ github.workspace }}/README.md
           else
+           processed_lines=$(grep -c '^.\{1024,\}' ADgk_downloaded.txt)
+            if [ -z "$processed_lines" ]; then
+              processed_lines=0
+            fi
            echo "Files are the same. No action required."
            echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - ADgk.txt 文件已更新，处理了 $processed_lines 行" >> ${{ github.workspace }}/log/log.txt
           fi
 
       - name: Commit and push changes
-        if: ${{ steps.compare.outputs.returncode == 0 }}
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
