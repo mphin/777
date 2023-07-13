@@ -1,17 +1,16 @@
 name: 定时下载和处理ADgk.txt
 
 on:
-  push:
-    branches:
-      - main
-      
+  schedule:
+    - cron: "0 0 * * *"
+    
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout代码库
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: 下载ADgk.txt
         run: curl -o ADgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
