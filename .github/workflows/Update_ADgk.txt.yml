@@ -35,6 +35,6 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add ADgk.txt log/log.txt
+          git add ADgk.txt log/log.txt README.md
           git commit -m "Update ADgk.txt"
           git push
