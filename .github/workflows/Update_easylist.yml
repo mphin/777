@@ -6,41 +6,30 @@ on:
       - main
 
 jobs:
-  update:
+  update_easylist:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Download and process easylist.txt
-        run: |
-         curl -o easylist.txt https://easylist-downloads.adblockplus.org/easylist.txt
-         sed -i '/^.\{1024,\}/d' easylist.txt
+      - name: Download easylist.txt
+        run: curl -o easylist.txt https://easylist-downloads.adblockplus.org/easylist.txt
 
-      - name: Compare files
-        id: compare
+      - name: Process and compare easylist.txt
         run: |
-          if diff -q easylist.txt ${{ github.workspace }}/easylist.txt >/dev/null; then
-           echo "Files are the same. No action required."
-           processed_lines=$(grep -c '^.\{1024,\}' easylist.txt)
-           if [ -z "$processed_lines" ]; then
-             processed_lines=0
-           fi
-           echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylist.txt 文件一致，处理了 $processed_lines 行" >> ${{ github.workspace }}/log/log.txt
+          sed -i '/^.{1024,}/d' easylist.txt
+          if diff --brief easylist.txt ${{ github.workspace }}/easylist.txt >/dev/null; then
+            echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylist.txt 文件一致" >> ${{ github.workspace }}/log/log.txt
           else
-           echo "Files are different. Updating easylist.txt"
-           mv easylist.txt ${{ github.workspace }}/easylist.txt
-           processed_lines=$(grep -c '^.\{1024,\}' easylist.txt)
-           if [ -z "$processed_lines" ]; then
-             processed_lines=0
-           fi
-           echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylist.txt 文件已更新，处理了 $processed_lines 行" >> ${{ github.workspace }}/README.md
+            cp easylist.txt ${{ github.workspace }}/easylist.txt
+            echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylist.txt 文件已更新" >> ${{ github.workspace }}/README.md
           fi
 
       - name: Commit and push changes
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add ${{ github.workspace }}easylist.txt ${{ github.workspace }}/log/log.txt ${{ github.workspace }}README.md
+          git add .
           git commit -m "Update easylist.txt"
           git push
