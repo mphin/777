@@ -27,7 +27,7 @@ jobs:
             echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - ADgk.txt file updated" >> ${{ github.workspace }}/log/log.txt
           else
             echo "Files are the same. No action required."
-            echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - Original file is identical. No action required" >> ${{ github.workspace }}/log/log.txt
+            echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - 原文件与本地一致，无需处理" >> ${{ github.workspace }}/log/log.txt
           fi
 
       - name: Commit and push changes
