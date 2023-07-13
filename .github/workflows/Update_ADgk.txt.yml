@@ -24,7 +24,7 @@ jobs:
           if ! cmp --silent adgk.txt ${{ github.workspace }}/ADgk.txt; then
             echo "Files are different. Updating ADgk.txt"
             mv adgk.txt ${{ github.workspace }}/ADgk.txt
-            echo "$(* TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - ADgk.txt文件已更新" >> ${{ github.workspace }}/README.md
+            echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - ADgk.txt文件已更新" >> ${{ github.workspace }}/README.md
           else
             echo "Files are the same. No action required."
             echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - 原文件与本地一致，无需处理" >> ${{ github.workspace }}/log/log.txt
