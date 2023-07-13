@@ -1,9 +1,8 @@
 name: 定时处理easylist.txt
 
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: "0 20 * * *"
 
 jobs:
   update:
