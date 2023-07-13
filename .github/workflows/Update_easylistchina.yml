@@ -14,24 +14,33 @@ jobs:
 
       - name: Download and process easylistchina.txt
         run: |
-         curl -o easylistchina.txt https://easylist-downloads.adblockplus.org/easylistchina.txt
-         sed -i '/^.\{1024,\}/d' easylistchina.txt
+         curl -o easylistchina_downloaded.txt https://easylist-downloads.adblockplus.org/easylistchina.txt
+         sed '/^.\{1024,\}/d' easylistchina_downloaded.txt > easylistchina_filtered.txt
 
       - name: Compare files
         id: compare
         run: |
-          if ! cmp --silent easylistchina.txt ${{ github.workspace }}/easylistchina.txt; then
+          if ! cmp --silent easylistchina_filtered.txt ${{ github.workspace }}/easylistchina.txt; then
            echo "Files are different. Updating easylistchina.txt"
-           mv easylistchina.txt ${{ github.workspace }}/easylistchina.txt
-           processed_lines=$(grep -c '^.\{1024,\}' easylistchina.txt)
+           mv easylistchina_filtered.txt ${{ github.workspace }}/easylistchina.txt
+           processed_lines=$(grep -c '^.\{1024,\}' easylistchina_downloaded.txt)
+           if [ -z "$processed_lines" ]; then
+             processed_lines=0
+           fi
            echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylistchina.txt 文件已更新，处理了 $processed_lines 行" >> ${{ github.workspace }}/README.md
           else
+           processed_lines=$(grep -c '^.\{1024,\}' easylistchina_downloaded.txt)
+           if [ -z "$processed_lines" ]; then
+              processed_lines=0
+           fi
            echo "Files are the same. No action required."
-           echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylistchina.txt 文件一致，处理了 $processed_lines 行" >> ${{ github.workspace }}/log/log.txt
+           echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylistchina.txt 文件无更新，处理了 $processed_lines 行" >> ${{ github.workspace }}/log/log.txt
           fi
 
+      - name: Clean up downloaded file
+        run: rm easylistchina_downloaded.txt
+
       - name: Commit and push changes
-        if: ${{ steps.compare.outputs.returncode == 0 }}
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
