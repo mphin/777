@@ -6,35 +6,34 @@ on:
       - main
 
 jobs:
-  update-adgk:
+  update:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Download and process ADgk.txt
-       run: |
-        curl -o adgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
-        sed -i '/^.\{1024,\}/d' adgk.txt
+      - name: Download and process ADgk.txt
+        run: |
+         curl -o adgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+         sed -i '/^.\{1024,\}/d' adgk.txt
 
-    - name: Compare files
+      - name: Compare files
         id: compare
-       run: |
-         if ! cmp --silent adgk.txt ${{ github.workspace }}/ADgk.txt; then
+        run: |
+          if ! cmp --silent adgk.txt ${{ github.workspace }}/ADgk.txt; then
            echo "Files are different. Updating ADgk.txt"
            mv adgk.txt ${{ github.workspace }}/ADgk.txt
            echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - ADgk.txt文件已更新" >> ${{ github.workspace }}/README.md
-         else
+          else
            echo "Files are the same. No action required."
            echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - 原文件与本地一致，无需处理" >> ${{ github.workspace }}/log/log.txt
-         fi
+          fi
 
-   - name: Commit and push changes
-       if: ${{ steps.compare.outputs.returncode == 0 }}
-      run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git add ADgk.txt log/log.txt README.md
-        git commit -m "Update ADgk.txt"
-        git push
+      - name: Commit and push changes
+        if: ${{ steps.compare.outputs.returncode == 0 }}
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add ADgk.txt log/log.txt README.md
+          git commit -m "Update ADgk.txt"
+          git push
