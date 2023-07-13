@@ -3,7 +3,6 @@
 ! Version: 202307130911
 ! Title: EasyList China
 ! Last modified: 13 Jul 2023 09:11 UTC
-! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 !
 ! EasyList China subscription
