@@ -1,0 +1,73 @@
+name: 定时处理ADG规则
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-adgk:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Download and process ADgk.txt
+        run: |
+          curl -o adgk.txt https://raw.githubusercontent.com/banbendalao/ADgk/master/ADgk.txt
+          sed -i '/^.\{1024,\}/d' adgk.txt
+
+      - name: Compare ADgk.txt
+        id: compare-adgk
+        run: |
+          if ! cmp --silent adgk.txt ${{ github.workspace }}/ADgk.txt; then
+            echo "ADgk.txt 文件已更新"
+            mv adgk.txt ${{ github.workspace }}/ADgk.txt
+            echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - ADgk.txt文件已更新" >> ${{ github.workspace }}/README.md
+          else
+            echo "ADgk.txt 文件未发生更改"
+            echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - ADgk.txt 文件未发生更改" >> ${{ github.workspace }}/log/log.txt
+          fi
+
+      - name: Download and process easylistchina.txt
+        run: |
+          curl -o easylistchina.txt https://easylist-downloads.adblockplus.org/easylistchina.txt
+          sed -i '/^.\{1024,\}/d' easylistchina.txt
+
+      - name: Compare easylistchina.txt
+        id: compare-easylistchina
+        run: |
+          if ! cmp --silent easylistchina.txt ${{ github.workspace }}/easylistchina.txt; then
+            echo "EasyList China 文件已更新"
+            mv easylistchina.txt ${{ github.workspace }}/easylistchina.txt
+            echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylistchina.txt 文件已更新" >> ${{ github.workspace }}/README.md
+          else
+            echo "EasyList China 文件未发生更改"
+            echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylistchina.txt 文件未发生更改" >> ${{ github.workspace }}/log/log.txt
+          fi
+
+      - name: Download and process easylist.txt
+        run: |
+          curl -o easylist.txt https://easylist-downloads.adblockplus.org/easylist.txt
+          sed -i '/^.\{1024,\}/d' easylist.txt
+
+      - name: Compare easylist.txt
+        id: compare-easylist
+        run: |
+          if ! cmp --silent easylist.txt ${{ github.workspace }}/easylist.txt; then
+            echo "EasyList 文件已更新"
+            mv easylist.txt ${{ github.workspace }}/easylist.txt
+            echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylist.txt 文件已更新" >> ${{ github.workspace }}/README.md
+          else
+            echo "EasyList 文件未发生更改"
+            echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylist.txt 文件未发生更改" >> ${{ github.workspace }}/log/log.txt
+          fi
+
+      - name: Commit and push changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add ADgk.txt easylistchina.txt easylist.txt log/log.txt README.md
+          git commit -m "Update ADgk.txt, EasyList China, and EasyList"
+          git push
