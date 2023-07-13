@@ -21,7 +21,7 @@ jobs:
       - name: Compare ADgk.txt
         id: compare-adgk
         run: |
-          if ! cmp --silent adgk.txt ${{ github.workspace }}/ADgk.txt; then
+          if ! diff -q adgk.txt ${{ github.workspace }}/ADgk.txt; then
             echo "ADgk.txt 文件已更新"
             mv adgk.txt ${{ github.workspace }}/ADgk.txt
             echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - ADgk.txt文件已更新" >> ${{ github.workspace }}/README.md
@@ -38,7 +38,7 @@ jobs:
       - name: Compare easylistchina.txt
         id: compare-easylistchina
         run: |
-          if ! cmp --silent easylistchina.txt ${{ github.workspace }}/easylistchina.txt; then
+          if ! diff -q easylistchina.txt ${{ github.workspace }}/easylistchina.txt; then
             echo "EasyList China 文件已更新"
             mv easylistchina.txt ${{ github.workspace }}/easylistchina.txt
             echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylistchina.txt 文件已更新" >> ${{ github.workspace }}/README.md
@@ -55,7 +55,7 @@ jobs:
       - name: Compare easylist.txt
         id: compare-easylist
         run: |
-          if ! cmp --silent easylist.txt ${{ github.workspace }}/easylist.txt; then
+          if ! diff -q easylist.txt ${{ github.workspace }}/easylist.txt; then
             echo "EasyList 文件已更新"
             mv easylist.txt ${{ github.workspace }}/easylist.txt
             echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylist.txt 文件已更新" >> ${{ github.workspace }}/README.md
