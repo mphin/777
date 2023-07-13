@@ -30,6 +30,10 @@ jobs:
            echo "* $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylist.txt 文件已更新，处理了 $processed_lines 行" >> ${{ github.workspace }}/README.md
           else
            echo "Files are the same. No action required."
+           processed_lines=$(grep -c '^.\{1024,\}' easylist.txt)
+           if [ -z "$processed_lines" ]; then
+             processed_lines=0
+           fi
            echo "$(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') - easylist.txt 文件一致，处理了 $processed_lines 行" >> ${{ github.workspace }}/log/log.txt
           fi
 
