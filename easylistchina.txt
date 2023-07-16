@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: sPzTBJxgUQ0VeQbeya4a2Q
-! Version: 202307152040
+! Checksum: DoMh4FyBY9q1/WxpEPGQJQ
+! Version: 202307162040
 ! Title: EasyList China
-! Last modified: 15 Jul 2023 20:40 UTC
+! Last modified: 16 Jul 2023 20:40 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 !
@@ -1588,11 +1588,14 @@ newduba.cn###jq_youxi
 ||23.234.217.11^
 ||23.234.217.12^
 !
+##a[href*=".f2ocoin.com/"]
+##a[href*="/9966699.vip"]
 ##a[href*="/mug749.vip"]
 ||1u5gy.xyz^
 ||3400.org^
 ||52kuwang.cn^
 ||abrnfctkn.xyz^
+||allcp.xyz^
 ||amerzbj.cn^
 ||baiduisjkbvsjkl.com^
 ||baiduvjsbvjknlsvsv.com^
@@ -1602,6 +1605,7 @@ newduba.cn###jq_youxi
 ||bifyeldv.top^
 ||bkhblj.xyz^
 ||boewgph.icu^
+||btescs.fun^
 ||bttazsyk.icu^
 ||caider.fun^
 ||chiese.site^
@@ -1615,16 +1619,19 @@ newduba.cn###jq_youxi
 ||dadde.cn^
 ||dd778899dd.com^
 ||dhkipdsc.xyz^
+||dojyiu8.com^
 ||donchen501.cn^
 ||dosre12.xyz^
 ||dstbekdf.xyz^
 ||dstbunkfw.xyz^
 ||duoying.vip^$third-party
+||dyeperd.icu^
 ||eghyahl.cn^
 ||erfskhnpter.xyz^
 ||esgher.site^
 ||euitx.cn^
 ||evidhjksdtgyxrh.xyz^
+||ewfsef.com^
 ||eyq3nog.icu^
 ||falsarywaybung.com^
 ||fjsytjs.cn^
@@ -1650,6 +1657,7 @@ newduba.cn###jq_youxi
 ||iplm.cc^
 ||jdcnwd.com^
 ||jh16csf.com^
+||jhlazsot.icu^
 ||jhzfwl.cn^
 ||jokerlulm.com^
 ||jpqed.xyz^
@@ -1669,10 +1677,12 @@ newduba.cn###jq_youxi
 ||lifyeldl.top^
 ||lwide.xyz^
 ||metaversemolecule.com^
+||misapopait.com^
 ||mlstx.cn^
 ||moobtcnse.xyz^
 ||ngbthf.xyz^
 ||nieae.xyz^
+||nqdufv.xyz^
 ||nryqr.cn^
 ||oifyeldk.top^
 ||one6u.xyz^
@@ -1688,6 +1698,7 @@ newduba.cn###jq_youxi
 ||qifyeldy.top^
 ||qqnde.xyz^
 ||qselic.top^
+||rabuagc.cn^
 ||rdufuxr.icu^
 ||relafp.xyz^
 ||ronbbf.xyz^
@@ -1712,6 +1723,7 @@ newduba.cn###jq_youxi
 ||xccadc.com^
 ||xcvwrj.xyz^
 ||xiaoxiuapp.com^
+||xjzyhp.xyz^
 ||xmxupz.xyz^
 ||xukou.net^
 ||yh18h8s.com^
@@ -7293,7 +7305,6 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||102tv.cn/js/main.js
 ||107.172.176.197^
 ||107.182.131.103/cache/?q=/images/
-||107cine.com/front/js/layer.js
 ||108.171.248.234^
 ||10fang.com/static/skin/tfy/layer/layer.js
 ||11.mydrivers.com/drivers/
@@ -13923,6 +13934,7 @@ zxzjtv.com##.container > .none
 ygdy8.cc##.container > a[href^="/"]
 vpsdx.com##.container-fluid > .gsfha3 > .gsfha3
 78dm.net##.container-fluid > a[href*=".taobao.com"]
+ppys66.com##.container-slide + .container-slide
 live.bilibili.com##.container-wrapper[style="height:446px;min-width:1280px"]
 423down.com##.content > a
 www.wangjing.cn##.content > div[style*="980px;"]
@@ -14224,8 +14236,6 @@ admin5.com##.float_both_index
 iqiyi.com##.float_div
 iqiyi.com##.float_div_r
 jpsub.com##.floatbar_div
-107cine.com##.flow-other
-107cine.com##.flow_right > div[style="margin-top:20px;"]
 sojson.com##.fly-hezuo
 followme.cn##.fm-banner-social
 cnblogs.com##.focus-gg
@@ -14545,7 +14555,7 @@ oschina.net##.index-ad-wrap
 cndesign.com##.index-add
 py.cn##.index-advert
 speedtest.cn##.index-advertising
-16fan.com,jianshen8.com,manwa.me##.index-banner
+jianshen8.com,manwa.me##.index-banner
 1avlang.com,avavl4.com,avlang.com##.index-info > .tac
 kpd122.com,ssp28.pw##.index-owl-carousel
 bilibili.com##.index-promote
@@ -14594,6 +14604,7 @@ haojiyou.la##.iqshwad-div
 douyu.com##.isLink[href^="https://igxe.cn/"]
 czsp12.com##.iswindow
 carrotchou.blog##.item > a[href^="http"]:not([href*=".carrotchou."])
+16fan.com##.item-newad
 gansudaily.com.cn##.itemFloat
 cnbeta.com##.items_area .time
 pconline.com.cn##.ivy > .ivy-wrap
@@ -16247,7 +16258,6 @@ peizimenhu.com##a[href^="http"]:not([href*=".peizimenhu."]) > img[src^="data/att
 wn789.com##a[href^="http"]:not([href*="://www.wn789."]) > img
 ilvruan.com##a[href^="http"]:not([href*="ilvruan"]) > img
 stock87.com##a[href^="http"]:not([href*="stock87."]) > img[src*="uploadfiles/image/"]
-107cine.com##a[href^="http://107cine.com/ads/"]
 hepuwang.com##a[href^="http://ad."]
 m.nownews.com##a[href^="http://ad1.nownews.com"]
 big5.china.com.cn##a[href^="http://big5.china.com.cn/gate/big5/"]:not([href*="/science."])
