@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: rLii4yR5JzRbrvSRg5RlLw
-! Version: 202307251941
+! Checksum: 63ZeEO+KMhM+kiCN3wIzbQ
+! Version: 202307261940
 ! Title: EasyList
-! Last modified: 25 Jul 2023 19:41 UTC
+! Last modified: 26 Jul 2023 19:40 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -3910,7 +3910,6 @@ _prebid8.
 /abtest_ab.js
 /ad-blocking-advisor/*
 /ad-blocking-alert/*
-/adb.min.js
 /adb_detector.
 /adblock-alerter/*
 /adblock-blocker/*
@@ -6717,14 +6716,8 @@ _800x80_
 ###box_advertising_info
 ###box_advertisment
 ###box_articlead
-###box_mod_googleadsense
 ###box_text_ads
 ###boxad
-###boxad1
-###boxad2
-###boxad3
-###boxad4
-###boxad5
 ###boxads
 ###bpAd
 ###br-ad-header
@@ -12108,24 +12101,15 @@ _800x80_
 ##.adcontainer300x250l
 ##.adcontainer300x250r
 ##.adcontainer_footer
-##.adcontent_box
 ##.adcontenttop
-##.adcontn
 ##.adcopy
 ##.adctr
-##.add-970-90
-##.add-column2
-##.add-header-area
 ##.add-position-right
 ##.add-sidebar
 ##.add300
 ##.add300top
 ##.add300x250
-##.add768
 ##.addAdvertContainer
-##.addResources
-##.add_300_250
-##.add_300x250
 ##.add_topbanner
 ##.addarea
 ##.addarearight
@@ -12133,7 +12117,6 @@ _800x80_
 ##.addboxRight
 ##.addisclaimer
 ##.addiv
-##.addivwhite
 ##.adds2
 ##.adds300x250
 ##.adds620x90
@@ -12143,12 +12126,9 @@ _800x80_
 ##.adengageadzone
 ##.adenquire
 ##.adex-ad-text
-##.adexpl
-##.adf_tisers
 ##.adfbox
 ##.adfeedback
 ##.adfeeds
-##.adfieldbg
 ##.adfix
 ##.adflag
 ##.adflexi
@@ -12168,8 +12148,6 @@ _800x80_
 ##.adfront-head
 ##.adfrp
 ##.adfull
-##.adg-rects
-##.adg_native_home
 ##.adgear
 ##.adgmleaderboard
 ##.adhalfhome
@@ -18553,6 +18531,7 @@ _800x80_
 ##.searchAd
 ##.searchAdTop
 ##.searchAds
+##.searchCenterBottomAds
 ##.searchResultAd
 ##.searchSponsorItem
 ##.search_results_ad
@@ -20221,7 +20200,6 @@ _800x80_
 ##a[href^="https://albionsoftwares.com/"]
 ##a[href^="https://aweptjmp.com/"]
 ##a[href^="https://awptjmp.com/"]
-##a[href^="https://axdsz.pro/"]
 ##a[href^="https://azpresearch.club/"]
 ##a[href^="https://banners.livepartners.com/"]
 ##a[href^="https://batheunits.com/"]
@@ -20347,7 +20325,6 @@ _800x80_
 ##a[href^="https://sTaRtGAMing.net/tienda/"]
 ##a[href^="https://sTartGAMinG.net/tienda/"]
 ##a[href^="https://safesurfingtoday.com/"][href*="?skip="]
-##a[href^="https://see.kmisln.com/"]
 ##a[href^="https://serve.awmdelivery.com/"]
 ##a[href^="https://spygasm.com/track?"]
 ##a[href^="https://staRTgamIng.net/tienda/"]
@@ -20376,8 +20353,6 @@ _800x80_
 ##a[href^="https://tracker.loropartners.com/"]
 ##a[href^="https://tracking.avapartner.com/"]
 ##a[href^="https://traffdaq.com/"]
-##a[href^="https://traffic.bannerator.com/"]
-##a[href^="https://transfer.xe.com/signup/track/redirect?"]
 ##a[href^="https://trk.nfl-online-streams.club/"]
 ##a[href^="https://trk.softonixs.xyz/"]
 ##a[href^="https://trk.sportsflix4k.club/"]
@@ -20386,7 +20361,6 @@ _800x80_
 ##a[href^="https://twinrdsyn.com/"]
 ##a[href^="https://u.expresstech.io/"]
 ##a[href^="https://visit-website.com/"]
-##a[href^="https://wantopticalfreelance.com/"]
 ##a[href^="https://webroutetrk.com/"]
 ##a[href^="https://wittered-mainging.com/"]
 ##a[href^="https://www.5mno3.com/"]
@@ -20610,14 +20584,9 @@ _800x80_
 ##div[id*="ScriptRoot"]
 ! ezoic
 ###ezmob_footer
-! Trust zone
-##a[href*=".trust.zone"]
 ! Adreclaim
-###rc-row-container
 ##.impo-b-overlay
 ##.impo-b-stitial
-##.rc-cta[data-target]
-##.rc-item-wrapper
 ##.rec-sponsored
 ##.rec_article_footer
 ##.rec_article_right
@@ -20846,6 +20815,8 @@ lalovings.com#@##adcontainer
 about.com#@##adcontainer1
 guloggratis.dk#@##adcontent
 lifeinvader.com#@##ads-col
+ads.nipr.ac.jp#@##ads-header
+ads.nipr.ac.jp#@##ads-menu
 herstage.com#@##ads-wrapper
 mafagames.com#@##adsContainer
 video.tv-tokyo.co.jp#@##adspace
@@ -21329,6 +21300,7 @@ browsershots.org#@#.advert_area
 ||1ts19.top^
 ||1upload43ver1.monster^
 ||1web.me^
+||1xlite-208883.top^
 ||1xlite-510677.top^
 ||1xroom.com^
 ||200088d4e2.com^
@@ -25283,6 +25255,7 @@ browsershots.org#@#.advert_area
 ||bf9c1dc8ca.com^
 ||bfast.com^
 ||bfbcb7a235.com^
+||bfcfbgalx.com^
 ||bfda839646.com^
 ||bfkvwuhyoingpmf.xyz^
 ||bfqcx.xyz^
@@ -26338,6 +26311,7 @@ browsershots.org#@#.advert_area
 ||cartoonpeecommissioner.com^
 ||caruagedlr.com^
 ||carvallo.info^
+||carverstingy.com^
 ||carvyre.com^
 ||casalemedia.com^
 ||casavawedder.com^
@@ -26629,6 +26603,7 @@ browsershots.org#@#.advert_area
 ||chargingexpressive.com^
 ||charitablemilletplumber.com^
 ||charitydestinyscornful.com^
+||charmingblur.com^
 ||charrewuzzer.com^
 ||charterporous.com^
 ||chartlon.skin^
@@ -26870,6 +26845,7 @@ browsershots.org#@#.advert_area
 ||cixaxuyu.xyz^
 ||cizare.xyz^
 ||cjduubvrm.com^
+||cjewz.com^
 ||cjf25jklrwqt.com^
 ||cjkfkratwkls.com^
 ||cjqncwfxrfrwbdd.com^
@@ -30103,6 +30079,7 @@ browsershots.org#@#.advert_area
 ||extremiu.top^
 ||extrer.com^
 ||exwotics6heomrthaoi4r.com^
+||eyauknalyticafra.info^
 ||eyeballdisk.com^
 ||eyebrowsasperitygarret.com^
 ||eyebrowscrambledlater.com^
@@ -31417,6 +31394,7 @@ browsershots.org#@#.advert_area
 ||ghrain.com^
 ||ghtry.amateurswild.com^
 ||ghttohimhedra.cc^
+||ghyhwiscizax.com^
 ||giantaffiliates.com^
 ||gianwho.com^
 ||gibaivoa.com^
@@ -32686,6 +32664,7 @@ browsershots.org#@#.advert_area
 ||hotpics.mom^
 ||hottercensorbeaker.com^
 ||hotterenvisage.com^
+||hotvids.online^
 ||hotwords.com^
 ||hotzoneunspeed.com^
 ||houdodoo.net^
@@ -32947,6 +32926,7 @@ browsershots.org#@#.advert_area
 ||idiotproprietary.com^
 ||idiotyet.com^
 ||iditolshewn.com^
+||idlccpuom.com^
 ||idledifficulty.pro^
 ||idnbckbknxurmf.xyz^
 ||idolizeduse.pro^
@@ -34400,6 +34380,7 @@ browsershots.org#@#.advert_area
 ||koucerie.com^
 ||koudooze.net^
 ||kougloar.com^
+||koujaups.xyz^
 ||kouptufezi.com^
 ||koureptu.xyz^
 ||koutobey.net^
@@ -35900,6 +35881,7 @@ browsershots.org#@#.advert_area
 ||mightylottrembling.com^
 ||mignished-sility.com^
 ||migrantspiteconnecting.com^
+||migric.com^
 ||mikhainpretts.xyz^
 ||milasktic.com^
 ||mildarmorynodding.com^
@@ -36284,6 +36266,7 @@ browsershots.org#@#.advert_area
 ||mpabqjdlyfec.xyz^
 ||mpay69.com^
 ||mpbngxooxgwkxri.xyz^
+||mpjdagaplpspmfx.xyz^
 ||mpk01.com^
 ||mplayeranyd.info^
 ||mployeesihi.xyz^
@@ -39123,6 +39106,7 @@ browsershots.org#@#.advert_area
 ||ponyresentment.com^
 ||ponysuggested.com^
 ||ponyvictorymiscarriage.com^
+||pooboqxoh.xyz^
 ||poodledopas.cam^
 ||poogriry.click^
 ||pookapsa.net^
@@ -40203,6 +40187,7 @@ browsershots.org#@#.advert_area
 ||radied.com^
 ||radiusfellowship.com^
 ||radiusmarketing.com^
+||raferu.com^
 ||raftybuts.com^
 ||rag3ca7t5amubr8eedffin.com^
 ||ragapa.com^
@@ -42988,6 +42973,7 @@ browsershots.org#@#.advert_area
 ||stipulenibber.com^
 ||stirringdecoctiononly.com^
 ||stismiqlqj.com^
+||stited.com^
 ||stitly.com^
 ||stitor.com^
 ||stiwhugn.net^
@@ -45796,6 +45782,7 @@ browsershots.org#@#.advert_area
 ||vocalconferencesinister.com^
 ||vocalreverencepester.com^
 ||vocath.com^
+||vodjnqarncm.com^
 ||vodobyve.pro^
 ||voeunblk.com^
 ||vogmlpzlnrj.com^
@@ -48248,6 +48235,7 @@ browsershots.org#@#.advert_area
 ||gururevenue.com^$third-party
 ||havetohave.com^$third-party
 ||headbidder.net^$third-party
+||headerbidding.ai^$third-party
 ||headerlift.com^$third-party
 ||healthtrader.com^$third-party
 ||horse-racing-affiliate-program.co.uk^$third-party
@@ -48966,6 +48954,7 @@ browsershots.org#@#.advert_area
 ||1redirc.com^$popup
 ||1ts17.top^$popup
 ||1ueikseq1.com^$popup
+||1xlite-208883.top^$popup
 ||1xlite-510677.top^$popup
 ||21find.com^$popup
 ||22bettracking.online^$popup
@@ -49522,6 +49511,7 @@ browsershots.org#@#.advert_area
 ||chaeffulace.com^$popup
 ||chainbelt.top^$popup
 ||chaintopdom.nl^$popup
+||charmingblur.com^$popup
 ||chauksoa.net^$popup
 ||cheap-jewelry-online.com^$popup
 ||cheaplycreateproprietor.com^$popup
@@ -49530,6 +49520,7 @@ browsershots.org#@#.advert_area
 ||check-this-match.com^$popup
 ||checkcdn.net^$popup
 ||chicks4date.com^$popup
+||chirtooxsurvey.top^$popup
 ||chl7rysobc3ol6xla.com^$popup
 ||chooxaur.com^$popup
 ||chpadblock.com^$popup
@@ -49710,6 +49701,7 @@ browsershots.org#@#.advert_area
 ||dealingdisarrayanniversary.com^$popup
 ||debrium-surbara.com^$popup
 ||decencyjessiebloom.com^$popup
+||deckedsi.com^$popup
 ||declaredpolitics.com^$popup
 ||decorationproducer.com^$popup
 ||dedating.online^$popup
@@ -49943,6 +49935,7 @@ browsershots.org#@#.advert_area
 ||extensions-media.com^$popup
 ||extractdissolve.com^$popup
 ||extremiu.top^$popup
+||eyauknalyticafra.info^$popup
 ||ezadblocker.com^$popup
 ||ezcgojaamg.com^$popup
 ||ezdownloadpro.info^$popup
@@ -50154,6 +50147,7 @@ browsershots.org#@#.advert_area
 ||gloytrkb.com^$popup
 ||glugherg.net^$popup
 ||gml-grp.com^$popup
+||gmxvmvptfm.com^$popup
 ||go-to-website.com^$popup
 ||go2affise.com^$popup
 ||go2cloud.org^$popup
@@ -50429,6 +50423,7 @@ browsershots.org#@#.advert_area
 ||iopiopiop.org.^$popup
 ||iopiopiop.org^$popup
 ||irkantyip.com^$popup
+||ironweaver.top^$popup
 ||irrelevantassassinclaim.com^$popup
 ||irtya.com^$popup
 ||isawthenews.com^$popup
@@ -53100,6 +53095,7 @@ browsershots.org#@#.advert_area
 !-----------------------------Third-party adverts-----------------------------!
 ! *** easylist:easylist/easylist_thirdparty.txt ***
 ||000webhost.com/images/banners/
+||1077519983.rsc.cdn77.org^
 ||1080872514.rsc.cdn77.org^
 ||1187531871.rsc.cdn77.org^
 ||1675450967.rsc.cdn77.org^
@@ -54603,6 +54599,7 @@ browsershots.org#@#.advert_area
 ||adultfriendfinder.com/banners/$popup,third-party
 ||adultfriendfinder.com/go/$popup,third-party
 ||bongacams8.com/track?$popup
+||brazzerssurvey.com^$popup
 ||cam4.com/?$popup
 ||cam4.com^*&utm_source=$popup
 ||camonster.com/landing/$popup,third-party
@@ -57311,7 +57308,7 @@ nexusmods.com##.agroup
 picnob.com##.ah-box
 stripes.com##.ahm-rotd
 techpp.com##.ai-attributes
-onlineradious.com##.ai-placement
+radiomixer.net##.ai-placement
 uploadvr.com##.ai-sticky-widget
 androidpolice.com,constructionreviewonline.com,cryptobriefing.com,dereeze.com,tyretradenews.co.uk##.ai-track
 getdroidtips.com,journeybytes.com,thebeaverton.com,thisisanfield.com,unfinishedman.com,windowsreport.com##.ai-viewport-1
@@ -60130,10 +60127,12 @@ forkast.news##a[href^="https://h5.whalefin.com/landing2/"]
 douploads.net##a[href^="https://href.li/?"]
 embed.listcorp.com##a[href^="https://j.moomoo.com/"]
 disasterscans.com##a[href^="https://martialscanssoulland.onelink.me/"]
+metager.org##a[href^="https://metager.org"][href*="/partner/r?"]
 dailyuploads.net##a[href^="https://ninjapcsoft.com/"]
 emalm.com##a[href^="https://offer.alibaba.com/"]
 101thefox.net,957thevibe.com##a[href^="https://parisicoffee.com/"]
 blix.gg##a[href^="https://partnerbcgame.com/"]
+metager.org##a[href^="https://r.search.yahoo.com/"]
 nosubjectlosangeles.com,richardvigilantebooks.com##a[href^="https://rebrand.ly/"]
 disasterscans.com##a[href^="https://recall-email.onelink.me/"]
 narkive.com##a[href^="https://rfnm.io/?"]
@@ -60830,8 +60829,6 @@ nordstrom.com#?#.ivm_G:-abp-contains(Sponsored)
 noon.com#?#span[class*="productContaine"]:-abp-has(div:-abp-contains(Sponsored))
 indiatimes.com#?#div:-abp-has(> div[id^="div-gpt-ad-"])
 mg.co.za#?#article:-abp-has(.sponsored-single)
-metager.org#?#.result:-abp-has(.mark:-abp-contains(Ad))
-metager.org#?#.result:-abp-has(span:-abp-contains(partnershop))
 rustlabs.com#?#.sub-info-block:-abp-has(#banner)
 rakuten.com#?#div[data-productid]:-abp-has(div.productList_sponsoredAds_RUS)
 alibaba.com#?#.J-offer-wrapper:-abp-contains(Top sponsor listing)
@@ -61015,8 +61012,8 @@ xing.com#?#div[class^="styles-grid-col-"]:-abp-has(span[class^="MediaObject-Medi
 yelp.at,yelp.be,yelp.ca,yelp.ch,yelp.cl,yelp.co.jp,yelp.co.nz,yelp.co.uk,yelp.com,yelp.com.ar,yelp.com.au,yelp.com.br,yelp.com.hk,yelp.com.mx,yelp.com.ph,yelp.com.sg,yelp.com.tr,yelp.cz,yelp.de,yelp.dk,yelp.es,yelp.fi,yelp.fr,yelp.ie,yelp.it,yelp.my,yelp.nl,yelp.no,yelp.pl,yelp.pt,yelp.se#?#div[class^=" container_"]:-abp-has(a[href^="/adredir?"])
 1001tracklists.com#?#a[onclick^='gaLnkTr']
 bestbuy.com#?#[id^="atwb-ninja-carousel"]
-metager.org#?#.result:-abp-has(img[src="/img/mark-en.svg"])
-metager.org#?#.result:-abp-has(span:-abp-contains(Partner))
+metager.org#?#.result:-abp-has(a[href^="https://r.search.yahoo.com/"])
+metager.org#?#.result:-abp-has(a[href^="https://metager.org"][href*="/partner/r?"])
 ! *** easylist:easylist_adult/adult_specific_hide.txt ***
 virtuagirlgirls.com###DynamicBackgroundWrapper
 porndr.com###PD-Under-player
