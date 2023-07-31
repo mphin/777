@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: +HEcuZzBvn0Fv0kSVYsoOA
-! Version: 202307302040
+! Checksum: h/lF8gwLuXGVRS30UTVe2Q
+! Version: 202307312040
 ! Title: EasyList China
-! Last modified: 30 Jul 2023 20:40 UTC
+! Last modified: 31 Jul 2023 20:40 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 !
@@ -226,6 +226,7 @@
 /api/apiFetchAdsData
 /api/autosda.php
 /api/Video/GetAdsData?
+/api/Video/GetAdsDataList?
 /app/pcBanner/getBannerConfig/v2
 /app_ad/slade.js
 /Appapi/jjlist.php
@@ -1604,6 +1605,7 @@ newduba.cn###jq_youxi
 ||1379a.xyz^
 ||1u5gy.xyz^
 ||3400.org^
+||39mydp.xyz^
 ||4asfgyx.com^
 ||52acc.cn^
 ||52kuwang.cn^
@@ -1620,6 +1622,7 @@ newduba.cn###jq_youxi
 ||baitaiz.com^
 ||bavde1.icu^
 ||bbges.xyz^
+||bcejk.xyz^
 ||bdates.fun^
 ||berylnbb.com^
 ||betcss.site^
@@ -1672,6 +1675,7 @@ newduba.cn###jq_youxi
 ||duoying.vip^$third-party
 ||dyeperd.icu^
 ||eamqbaqzaewwq.top^
+||eers0cy.com^
 ||eghyahl.cn^
 ||ejolul.xyz^
 ||ekdky.cn^
@@ -1718,17 +1722,20 @@ newduba.cn###jq_youxi
 ||hiqua.xyz^
 ||hkkeafj.cn^
 ||hlnr9q.icu^
+||hmjhnkas.com^
 ||hnfnjn.xyz^
 ||hohmaryt.com^
 ||hongteng.xyz^
 ||hpvwdkn.cn^
 ||hqgearb.icu^
+||hqzcths.cn^
 ||hsadeg.site^
 ||hslbahu.top^
 ||hstbrt.xyz^
 ||hubiazhi.com^
 ||hujunhao.name^
 ||huoju.asia^
+||hxhohd.xyz^
 ||hyeqp.xyz^
 ||hypwbv.xyz^
 ||hzhabei.cn^
@@ -1773,6 +1780,7 @@ newduba.cn###jq_youxi
 ||kljslku.com^
 ||knjmhmk.com^
 ||kodfn.xyz^
+||kslbahd.top^
 ||kv8899.com^
 ||kxm1b0u.com^
 ||kyplpw.com^
@@ -1791,6 +1799,7 @@ newduba.cn###jq_youxi
 ||llpuhx.xyz^
 ||lmnpd.xyz^
 ||lrlsrz.xyz^
+||lskmipb.icu^
 ||lvrvdn.xyz^
 ||lwide.xyz^
 ||lycjsix.cn^
@@ -1803,6 +1812,7 @@ newduba.cn###jq_youxi
 ||mrqbuf.xyz^
 ||mt4v4.com^
 ||mvgucp.com^
+||ncgqmzm.cn^
 ||nektonsrutate.com^
 ||ngbthf.xyz^
 ||nhjkm.com^
@@ -1836,14 +1846,17 @@ newduba.cn###jq_youxi
 ||powedw.com^
 ||pr88vhg.com^
 ||pstvvb.xyz^
+||puy2.cn^
 ||pzjizsyf.icu^
 ||qezpjlp.cn^
 ||qhx1h2g.com^
 ||qifyeldy.top^
+||qpztub.xyz^
 ||qqnde.xyz^
 ||qselic.top^
 ||qwdbsjnql.com^
 ||rabuagc.cn^
+||rddsjx.xyz^
 ||rdufuxr.icu^
 ||relafp.xyz^
 ||remfebd.cn^
@@ -1870,6 +1883,7 @@ newduba.cn###jq_youxi
 ||tftran.shop^
 ||tfttbd.xyz^
 ||tgbevv.xyz^
+||thesac2.top^
 ||tifyeldi.top^
 ||tlprlf.xyz^
 ||tmwbszn.icu^
@@ -9960,6 +9974,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||ivy.pconline.com.cn^
 ||iwanad.baidu.com^
 ||iyf.tv/a/$xmlhttprequest
+||iyf.tv/play/$xmlhttprequest
 ||iyingdi.com/goood?
 ||iztwp.com/images/
 ||izzs.cc/wp-content/mm/
@@ -19324,7 +19339,6 @@ dlkoo.com##ins[id^="tanxssp-outer-conmm_"]
 ##vg-pause-ads
 @@/ads.js$domain=iyf.tv
 ||dnvodcdn.me/fast/*.mp4
-||flyv.tv/a/$xmlhttprequest
 ||s1-a1.dnvodcdn.me^*.svg
 !#e
 !#f
