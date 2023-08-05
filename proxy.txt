@@ -1,0 +1,9 @@
+payload:
+  - 'cdn.cdnjson.com'
+  - '404world.tk'
+  - '152.195.38.76/32'
+  - '172.224.26.144/32'
+  - '192.9.149.24/32'
+  - '+.ffq.la'
+  - '+.quchao.net'
+  - 'stash.wiki'
