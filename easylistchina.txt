@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: 7Ju5TQ6vy7yM5n+NXYYndQ
-! Version: 202308102040
+! Checksum: arF+2jfDUcrWqEtLxZym3g
+! Version: 202308112040
 ! Title: EasyList China
-! Last modified: 10 Aug 2023 20:40 UTC
+! Last modified: 11 Aug 2023 20:40 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 !
@@ -21,6 +21,7 @@
 -1316632262.cos.
 -1316899192.cos.
 -1688-wp-media/ads/
+/os230718.oss-
 -90mh-gg.
 .bid/ads/
 .blog/ads/
@@ -1632,6 +1633,7 @@ newduba.cn###jq_youxi
 ||aqvwn18102h.com^
 ||arpg2.com^
 ||b4g7k9d2.com^
+||bai128.xyz^
 ||baiduisjkbvsjkl.com^
 ||baiduvjsbvjknlsvsv.com^
 ||baitaiz.com^
@@ -1641,6 +1643,7 @@ newduba.cn###jq_youxi
 ||bcejk.xyz^
 ||bdates.fun^
 ||belindanbd.com^
+||berjzj.xyz^
 ||berylnbb.com^
 ||betcss.site^
 ||bftqdd.xyz^
@@ -1649,6 +1652,7 @@ newduba.cn###jq_youxi
 ||bifyeldv.top^
 ||bkhblj.xyz^
 ||bkjlf58.com^
+||bnds3.site^
 ||bnds4.site^
 ||bnds8.site^
 ||bnfyzszm.icu^
@@ -1690,6 +1694,7 @@ newduba.cn###jq_youxi
 ||dd778899dd.com^
 ||ddush.xyz^
 ||dehaer.site^
+||derew6xbsc.xyz^
 ||destc8.icu^
 ||dffrahax.com^
 ||dfgpifa.com^
@@ -1862,8 +1867,10 @@ newduba.cn###jq_youxi
 ||liitwrz.icu^
 ||likdie.com^
 ||lkmhn.com^
+||lknnbd.xyz^
 ||llpuhx.xyz^
 ||lmnpd.xyz^
+||lokindt.com^
 ||lokngd.com^
 ||lqjinx.xyz^
 ||lrlsrz.xyz^
@@ -1919,6 +1926,7 @@ newduba.cn###jq_youxi
 ||pbtsjh.xyz^
 ||pcqsajr.icu^
 ||pcvzpj.xyz^
+||pfhj89w.com^
 ||pfqwbqs.cn^
 ||pirxzl.xyz^
 ||pjsbuhl.icu^
@@ -2033,6 +2041,7 @@ newduba.cn###jq_youxi
 ||xcvwrj.xyz^
 ||xeghes.fun^
 ||xeynozl.icu^
+||xhiit0n.xyz^
 ||xiaoxiuapp.com^
 ||xiaoy.name^
 ||xixrdn.xyz^
@@ -2043,6 +2052,7 @@ newduba.cn###jq_youxi
 ||xmxupz.xyz^
 ||xn--jvrp4x1zyfta.net^
 ||xn--zw0autp42d.cn^
+||xopxptn.cn^
 ||xpcwrgy.cn^
 ||xpicj1.cc^
 ||xqblnei.cn^
@@ -2069,11 +2079,18 @@ newduba.cn###jq_youxi
 ||zfcdirf.icu^
 ||zfteiv.xyz^
 ||zfvltd.xyz^
+||zggrxf.life^
 ||zghsfh.xyz^
 ||zifyeldq.top^
 ||ziravd.xyz^
 ||znyjmbh.icu^
+||36mghtd.xyz^
+||egipsbvlgn.xyz^
+||lingsiqiwu.com^
+||baidudvbjkbssjvsvv.com^
+||duyvtanrheje.xyz^
 ||zonyff.xyz^
+||zvasuzb.icu^
 ||zxrcfw.com^
 ||zypzzv.xyz^
 !
@@ -17300,6 +17317,7 @@ android-doc.com,apk.tw,chaojizhibo.net,chtoen.com,dizhishengcheng.com,doitwell.t
 @@||192.168.*.1/$generichide
 @@||192.168.*/advertising_$stylesheet
 @@||199it.com^$generichide
+@@||1keydata.com^$generichide
 @@||2018x.bid/adview.js
 @@||210.40.130.91^*/ad.css?$stylesheet
 @@||2345.com/images/activity/20171111/open/j/close.png
