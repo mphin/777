@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: mx4pD6Ub87WbmfdcxjTItw
-! Version: 202308251940
+! Checksum: 2bTNW7EooQMpit2ZP5O5/w
+! Version: 202308261940
 ! Title: EasyList
-! Last modified: 25 Aug 2023 19:40 UTC
+! Last modified: 26 Aug 2023 19:40 UTC
 ! Expires: 1 days (update frequency)
 ! Homepage: https://easylist.to/
 ! Licence: https://easylist.to/pages/licence.html
@@ -33,13 +33,11 @@
 -ad.jpg.pagespeed.
 -ad.jpg?
 -ad.php?
--adap.$domain=~l-adap.org
 -adbanner.
 -adbox-
 -adfliction.
 -adfliction/
 -adimage-
--adloader-
 -ads-banner.
 -ads-bottom.
 -ads-management/
@@ -50,14 +48,11 @@
 -ads/assets/$domain=~web-ads.org
 -adserver/
 -adskin.
--adslots.
 -adsonar.
 -adspace.$domain=~metaverse-adspace.com
 -advertise/
 -advertisement_
 -advertising/assets/
--advertising_
--advertisment-
 -adverts.min.
 -article-ad-
 -article-ad.
@@ -152,11 +147,8 @@
 .clkads.
 .club/js/popunder.js
 .cn/sc/*?n=$script,third-party
-.com/?ad=
 .com/a?pagetype
 .com/ad/$~image,third-party,domain=~mediaplex.com|~warpwire.com|~wsj.com
-.com/ad?
-.com/ads.$~script,~xmlhttprequest
 .com/ads/$image,object,subdocument,domain=~developers.google.com|~sabotage-films.com
 .com/ads?
 .com/adv/$domain=~adv.asahi.com|~advantabankcorp.com|~archiproducts.com|~tritondigital.com
@@ -180,8 +172,6 @@
 .gr/ads/
 .hk/ads/
 .hr/ads.
-.html?ad=
-.html?ad_
 .html?clicktag=
 .iads.js
 .il/ads.
@@ -330,7 +320,6 @@
 /ad.css?
 /ad.html?
 /ad.min.
-/ad.php?
 /ad.skin.
 /ad.slot.
 /ad.view?
@@ -358,9 +347,6 @@
 /Ad/Index?
 /ad/index_
 /ad/leaderboard.
-/ad/load.
-/ad/load_
-/ad/mpu/*
 /ad/player_
 /ad/popup.
 /ad/random_
@@ -372,7 +358,6 @@
 /ad/skyscraper.
 /ad/sponsored-
 /ad/sponsors/*
-/ad/thumbs/*
 /ad/top.
 /ad/top_
 /ad/view/*
@@ -463,14 +448,9 @@
 /ad_label_
 /ad_large.
 /ad_lazyload.
-/ad_leader.
-/ad_leader_
-/ad_leaderboard.
-/ad_leaderboard/*
 /ad_left.
 /ad_left_
 /ad_link.
-/ad_links/*
 /ad_loader.
 /ad_manage.
 /ad_manager.
@@ -482,7 +462,6 @@
 /ad_notice.
 /ad_overlay.
 /ad_page_
-/ad_paper_
 /ad_peel/*$script
 /ad_popup_
 /ad_pos=
@@ -551,12 +530,10 @@
 /adback.
 /adback?
 /AdBackground.
-/adban.
 /adbanner2.
 /adBanner?
 /adbanner_
 /adbanners/*
-/adbar.$domain=~adbar.fi|~adbar.io|~adbar.jp
 /adbeacon.
 /adbottom.
 /adbox.
@@ -772,9 +749,6 @@
 /ads/header.
 /ads/header/*
 /ads/header_
-/ads/home/*
-/ads/homepage/*
-/ads/horizontal/*
 /ads/house_
 /ads/html/*
 /ads/iframe
@@ -1118,11 +1092,6 @@
 /advertisment_
 /advertisments/*$~image
 /advertlayer.
-/advertorial-
-/advertorial/*
-/advertphp/*
-/advertpro/*
-/advertrail.
 /advertright.
 /adverts.$~script,domain=~adverts.ie|~adverts.org.ua
 /adverts/*$~xmlhttprequest
@@ -1149,13 +1118,11 @@
 /adwiz.
 /adwiz/*
 /adwrapper/*
-/adx.$domain=~adx.acrosspf.com|~adx.business|~adx.co.nz|~adx.cx|~adx.nz|~adx.rs|~adx.ru|~adx.traveledge.com|~adx.tribefire.com|~adx.uk.com|~adx.world|~adx.wowfi.com|~journals.uchicago.edu|~solutionshill.com
 /adx/ads?
 /adx2.
 /adx_exo_
 /adx_flash.
 /adx_iframe_
-/adyoulike.$domain=~adyoulike.com
 /adz/js/*
 /adzerk2_
 /adzones.
@@ -1196,7 +1163,6 @@
 /ak-ads-ns.
 /amazon-ad-
 /amazon-associates-link-$~stylesheet
-/amazon/widget/*
 /ame-dfp/*
 /amp-ad-
 /amp-connatix-
@@ -1208,7 +1174,6 @@
 /annonse/*
 /annonser.
 /annonser/*$domain=~billink.no
-/announce/adv/*
 /ape-ad-
 /api-ads.
 /api.ad.
@@ -1217,10 +1182,8 @@
 /api/ad/*
 /api/ads/*
 /api/ads?
-/api/getcreatives?
-/api/handshake?site=$xmlhttprequest
 /api/v1/ad/*
-/apopwin.
+/apopwin.js
 /app.ads-
 /app.ads.
 /app/ads.
@@ -1494,7 +1457,6 @@
 /defersds.
 /delay-ad.
 /delayedad.
-/deliver/wr?
 /deliverad/*
 /deliverads.
 /deliversd/*
@@ -1503,13 +1465,10 @@
 /delivery.php?pool_id=
 /delivery.php?rnd=
 /delivery.php?zone=
-/delivery/afr.
 /delivery/ag.
-/delivery/al.php
 /delivery/apu.php
 /delivery/avw.
 /delivery/fc.
-/delivery/fl.
 /delivery/jsonp/?zoneid=
 /delivery/spc.
 /delivery_ads/*
@@ -1577,17 +1536,12 @@
 /exitpopunder_
 /exitpopup.
 /exitsplash.
-/exo_bck_
 /exoads/*
 /exobanner.
 /exoclick.$~script,domain=~exoclick.bamboohr.co.uk|~exoclick.kayako.com
-/exopopunderdesktop.js
-/exosrvcode-
 /expads-
 /exports/tour/*$third-party
 /exports/tour_20/*
-/ext/adform-
-/ext/ads/*
 /extban/*/creatives/*
 /external/ad.
 /external/ad/*
@@ -1597,27 +1551,15 @@
 /externalad.
 /externalads/*
 /fc_ads.
-/feature/ads/*
 /fel456.js$script
-/file/ad.
 /files/ad-
 /files/ad/*
-/files/ads-
-/files/ads/*
-/fimserve.
-/finads.
-/fixSpecialAdHome.
-/flag_ads.
-/flash/ad/*
-/flash/ad_
-/flash/ads/*
 /flashad.
 /flashad3.
 /flashads.$domain=~flashads.co.id
 /flashads/*
 /flashpeelads/*
 /flatad.
-/flesh_banner
 /fleshlight.$domain=~fleshlight.com|~fleshlight.zendesk.com
 /fleshlightcash_
 /fload.js
@@ -26224,6 +26166,7 @@ browsershots.org#@#.advert_area
 ||confiskbriggs.top^
 ||confrontationdrunk.com^
 ||confused-classic.pro^
+||confvtt.com^
 ||congestionbeautycrystal.com^
 ||congestit.com^
 ||congressaffrayghosts.com^
@@ -46981,6 +46924,7 @@ browsershots.org#@#.advert_area
 ||xxmaqoupnd.com^
 ||xxodleylnfhyi.com^
 ||xxofygygumf.com^
+||xxpghuf.com^
 ||xxxbannerswap.com^
 ||xxxex.com^
 ||xxxiijmp.com^
@@ -48792,6 +48736,7 @@ browsershots.org#@#.advert_area
 ||tagjunction.com^$third-party
 ||tailsweep.com^$third-party
 ||taiphaib.net^$third-party
+||takeads.com^$third-party
 ||talaropa.com^$third-party
 ||tangozebra.com^$third-party
 ||tankeuro.com^$third-party
@@ -53608,6 +53553,7 @@ browsershots.org#@#.advert_area
 ||purevpn.com/affiliates/
 ||qsearch-a.akamaihd.net^
 ||racebets.com/media.php?
+||random-affiliate.atimaze.com^
 ||readme.ru/informer/
 ||recipefy.net/rssfeed.php
 ||redirect-ads.com^$~subdocument,third-party
@@ -54957,9 +54903,11 @@ browsershots.org#@#.advert_area
 ||benjamingroff.com/uploads/images/ads/
 ||bernama.com/storage/banner/
 ||bestblackhatforum.com/images/my_compas/
+||bestlittlesites.com/plugins/advertising/getad/
 ||bioinformatics.org/images/ack_banners/
 ||bit.com.au/scripts/js_$script
 ||blbclassic.org/assets/images/*banners/
+||blsnet.com/plugins/advertising/getad/
 ||blue.ktla.com^
 ||bordeaux.futurecdn.net^
 ||borneobulletin.com.bn/wp-content/banners/
@@ -54994,6 +54942,7 @@ browsershots.org#@#.advert_area
 ||creatives.livejasmin.com^
 ||cricbuzz.com/api/adverts/
 ||cricketireland.ie//images/sponsors/
+||cript.to/dlm.png
 ||crn.com.au/scripts/js_$script
 ||cyberscoop.com/advertising/
 ||d1lxz4vuik53pc.cloudfront.net^$domain=amazon.ae|amazon.ca|amazon.cn|amazon.co.jp|amazon.co.uk|amazon.com|amazon.com.au|amazon.com.br|amazon.com.mx|amazon.com.tr|amazon.de|amazon.eg|amazon.es|amazon.fr|amazon.in|amazon.it|amazon.nl|amazon.pl|amazon.sa|amazon.se|amazon.sg
@@ -57455,6 +57404,7 @@ allscrabblewords.com,mpog100.com##.ad3
 india.com##.ad5
 cricketcountry.com##.ad90mob300
 chron.com,crypto-news-flash.com,greenwichtime.com,houstonchronicle.com,mysanantonio.com,seattlepi.com,sfchronicle.com,sfgate.com,thetelegraph.com,timesunion.com##.adBanner
+medibang.com##.adBlock__pc
 bigislandnow.com##.adBreak
 m.economictimes.com,someecards.com,trailspace.com##.adContainer
 etymonline.com##.adContainer--6CVz1
@@ -58345,6 +58295,7 @@ bikeradar.com##.elementor-element-3f6e8dd
 hilltimes.com##.elementor-element-5818a09
 thecountersignal.com##.elementor-element-8d2cc6c
 granitegrok.com##.elementor-image > [data-wpel-link="external"]
+optimyz.com##.elementor-shortcode
 canyoublockit.com##.elementor-widget-container > center > p
 worldscreen.com##.embdad
 popsci.com##.empire-below_content__desktop__articles-prefill-container
@@ -58691,6 +58642,7 @@ thecanary.co##.in-content-ad
 businessinsider.com,insider.com##.in-post-sticky
 faithpot.com##.inarticle-ad
 crash.net##.inarticle-wrapper
+knowyourmeme.com##.incontent-leaderboard-unit-wrapper
 motherjones.com##.incontent-promo
 truckinginfo.com##.incontent02Ad
 scienceabc.com##.incontentad
@@ -58784,6 +58736,7 @@ essentiallysports.com##.jsx-4249843366
 conservativefiringline.com##.jtpp53
 theartnewspaper.com##.justify-center.flex.w-full
 aiscore.com##.justify-center.w100
+anandtech.com##.jw-reset
 issuu.com##.jzWDOE
 mamieastuce.com##.k39oyi
 qz.com##.k3mqd
@@ -58943,6 +58896,7 @@ medibang.com##.mdbnAdBlock
 thestar.com.my##.med-rec
 gamezone.com##.med-rect-ph
 ghanaweb.com##.med_rec_lg_min
+picuki.me##.media-wrap-h12
 webmd.com##.medianet-ctr
 gfinityesports.com##.mediavine_sidebar-atf_wrapper
 allmusic.com##.medium-rectangle
@@ -59610,6 +59564,7 @@ rockradio.com##.sidewall-ad-component
 sifted.eu##.sifted_advert_block
 wncv.com##.simple-image
 metalsucks.net##.single-300-insert
+9to5mac.com##.single-custom-post-ad
 abovethelaw.com##.single-post__sponsored-post--desktop
 policyoptions.irpp.org##.single__ad
 deshdoaba.com##.site-branding
@@ -59738,6 +59693,7 @@ walletinvestor.com##.sticky-footer-content
 babylonbee.com##.sticky-footer-image
 business2community.com##.sticky-header
 sciencing.com,sportsnet.ca##.sticky-leaderboard-container
+fastcompany.com##.sticky-outer-wrapper
 theportugalnews.com##.sticky-pub
 thechinaproject.com##.sticky-spacer
 oilcity.news##.sticky-sponsors-large
@@ -60084,6 +60040,7 @@ nypost.com##.widget_nypost_vivid_concerts_widget
 dailynewsegypt.com##.widget_rotatingbanners
 twistedsifter.com##.widget_sifter_ad_bigbox_widget
 985kissfm.net,bxr.com,catcountry951.com,nashfm1065.com,power923.com,wncv.com,wskz.com##.widget_simpleimage
+optimyz.com##.widget_smartslider3
 acprimetime.com,androidpctv.com,brigantinenow.com,downbeachbuzz.com##.widget_sp_image
 screenbinge.com,streamingrant.com##.widget_sp_image-image-link
 gamertweak.com##.widget_srlzycxh
@@ -60441,6 +60398,7 @@ presearch.com##[x-data*="kwrdAdFirst"]
 mobiforge.com##a > img[alt="Ad"]
 eztv.tf,eztv.yt##a > img[alt="Anonymous Download"]
 freshplaza.com##a.banner
+cript.to##a.btn[target="_blank"][href^="https://cript.to/"]
 facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion##a[ajaxify*="&eid="] + a[href^="https://l.facebook.com/l.php?u="]
 newstalkflorida.com##a[alt="Ad"]
 facebook.com,facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion##a[aria-label="Advertiser link"]
@@ -61421,6 +61379,7 @@ seattleweekly.com#?#.marketplace-row-item-wrapper:-abp-has(.sponsored)
 shopee.co.id,shopee.ph#?#.col-xs-2-4:-abp-has(div[data-sqe="ad"])
 shopee.co.id,shopee.ph#?#.item-card-list__item-card-wrapper:-abp-has(div[data-sqe="ad"])
 stuff.co.nz#?#[itemprop]:-abp-has(.sponsored-flag)
+filecrypt.cc,filecrypt.co#?#button:-abp-has(path[d$="177.3,200.6z"])
 target.com#?#.ProductRecsLink-sc-4mw94v-0:-abp-has(p:-abp-contains(sponsored))
 target.com#?#div[data-test="@web/ProductCard/ProductCardVariantAisle"]:-abp-contains(Sponsored)
 target.com#?#div[data-test="@web/site-top-of-funnel/ProductCardWrapper"]:-abp-contains(sponsored)
