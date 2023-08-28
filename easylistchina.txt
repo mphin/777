@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: dIYorfEQK/pBOe4TrON7jA
-! Version: 202308272040
+! Checksum: KZHuM3i7riVLMJdLruO6RQ
+! Version: 202308282040
 ! Title: EasyList China
-! Last modified: 27 Aug 2023 20:40 UTC
+! Last modified: 28 Aug 2023 20:40 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 !
@@ -829,6 +829,7 @@ ubmcmm.baidustatic.com
 ###adtop1
 ###adv-2
 ###adv-3
+###adv-fixed-square
 ###adv_wrap_hh
 ###adx_cggp
 ###app > .publicAllContentBg > .bigBannerBg
@@ -1127,6 +1128,7 @@ newduba.cn###jq_youxi
 ##.adsense160
 ##.adsense200
 ##.adsoho
+##.adv-couplets
 ##.adv-g1
 ##.advInfoElem
 ##.advertising_lightbox
@@ -1630,6 +1632,7 @@ newduba.cn###jq_youxi
 ||4asfgyx.com^
 ||52acc.cn^
 ||52kuwang.cn^
+||5gg17gm.com^
 ||5ggj5cp.com^
 ||5lfgdju.com^
 ||777aa999aa.com^
@@ -1683,6 +1686,7 @@ newduba.cn###jq_youxi
 ||bkhblj.xyz^
 ||bkjlf58.com^
 ||bmptbyb.com^
+||bmyrihf.icu^
 ||bnds3.site^
 ||bnds4.site^
 ||bnds6.site^
@@ -1776,6 +1780,7 @@ newduba.cn###jq_youxi
 ||eheb8.cn^
 ||ejolul.xyz^
 ||ekdky.cn^
+||eltdeh.top^
 ||enhad.xyz^
 ||epoid.xyz^
 ||eraaoec.cn^
@@ -1839,6 +1844,7 @@ newduba.cn###jq_youxi
 ||hbxhnqj.cn^
 ||hdfdsdaw.com^
 ||hdpdrandpd.xyz^
+||hefei668.com^
 ||hegk01a.top^
 ||hegk02a.top^
 ||hegk03a.top^
@@ -1857,6 +1863,7 @@ newduba.cn###jq_youxi
 ||hjkiguy.com^
 ||hkctmldg.icu^
 ||hkkeafj.cn^
+||hkscldggm.xyz^
 ||hlnr9q.icu^
 ||hmjhnkas.com^
 ||hnfnjn.xyz^
@@ -1916,6 +1923,7 @@ newduba.cn###jq_youxi
 ||jpush0b.xyz^
 ||jpvrbt.xyz^
 ||jqkcett.icu^
+||jrltdiu.cn^
 ||jrmrijv.icu^
 ||jslbaha.top^
 ||jszavs1.com^
@@ -2023,6 +2031,7 @@ newduba.cn###jq_youxi
 ||nifyeldc.top^
 ||nimoatl.icu^
 ||njogejt.icu^
+||nlvgxr.xyz^
 ||nmdotj.xyz^
 ||nmkghh.com^
 ||nmssdbgmf.xyz^
@@ -2087,6 +2096,7 @@ newduba.cn###jq_youxi
 ||qslbahy.top^
 ||qucncfo.cn^
 ||qwdbsjnql.com^
+||r5dfwjtb.icu^
 ||rabuagc.cn^
 ||rbodwtj.icu^
 ||rcblfd.xyz^
@@ -2117,6 +2127,7 @@ newduba.cn###jq_youxi
 ||sd01you.com^
 ||sdchb2.com^
 ||sdfgbuy.com^
+||sdvfvgj.cn^
 ||sensifyfugged.com^
 ||sfg11rr.com^
 ||shulsbs.cn^
@@ -2213,6 +2224,7 @@ newduba.cn###jq_youxi
 ||wuye3d.com^
 ||wyq3rum.icu^
 ||wzctuv.xyz^
+||x5hnj21.com^
 ||xccadc.com^
 ||xckj0623.com^
 ||xcvwrj.xyz^
@@ -8149,7 +8161,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||acgnx.se/images/adwork/
 ||acgnz.cn/static/b.js
 ||acgnz.cn/static/i.js
-||achost.top/banner/
+||achost.top/uploads/ads/
 ||acode.b2b.cn/JS/
 ||acodes.b2b.cn^
 ||act.chinatimes.com/aimg/
@@ -12640,7 +12652,7 @@ jiangjunzy.com###index-lb
 ydss.cn###indexBlad
 hdmoli.com###index_banner
 baidu.com###index_banner_top
-2dfan.com,3dmgame.com,galge.fun###index_bg_box
+3dmgame.com###index_bg_box
 qiyeku.com###index_gg
 sm.cn###index_haodongxi
 baidu.com###index_right_float
