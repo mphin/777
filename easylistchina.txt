@@ -1,8 +1,8 @@
 [Adblock Plus 2.0]
-! Checksum: pIiBpgVt07woAvdJhhsJcA
-! Version: 202308312040
+! Checksum: Y6j3DEo6b1TG/uFEGWWsxA
+! Version: 202309012040
 ! Title: EasyList China
-! Last modified: 31 Aug 2023 20:40 UTC
+! Last modified: 01 Sep 2023 20:40 UTC
 ! Expires: 4 days (update frequency)
 ! Homepage: https://github.com/easylist/easylistchina/
 !
@@ -1691,6 +1691,8 @@ newduba.cn###jq_youxi
 ||bifyeldv.top^
 ||bkhblj.xyz^
 ||bkjlf58.com^
+||bleumzr.icu^
+||bmiea.xyz^
 ||bmptbyb.com^
 ||bmyrihf.icu^
 ||bnds3.site^
@@ -1699,6 +1701,7 @@ newduba.cn###jq_youxi
 ||bnds7.site^
 ||bnds8.site^
 ||bnfyzszm.icu^
+||bnrdnx.xyz^
 ||boewgph.icu^
 ||botnrr.xyz^
 ||boyidianqi.com.cn^
@@ -1834,6 +1837,7 @@ newduba.cn###jq_youxi
 ||fxeaobv.icu^
 ||gdjme27.com^
 ||ggdrfh5.com^
+||ggdumze.cn^
 ||gghmef7.com^
 ||ghland.site^
 ||gjipd.xyz^
@@ -1921,6 +1925,7 @@ newduba.cn###jq_youxi
 ||janwzsqi.icu^
 ||jayhou.top^
 ||jdcnwd.com^
+||jgsajfggv.xyz^
 ||jh16csf.com^
 ||jhkggrr.icu^
 ||jhlazsot.icu^
@@ -1958,6 +1963,7 @@ newduba.cn###jq_youxi
 ||kahgjjd.com^
 ||kasiklz.cc^
 ||kdvmnn.com^
+||kekop.cn^
 ||kgeesh.site^
 ||kjvaqbyebqarl.top^
 ||kklpe.xyz^
@@ -1991,6 +1997,7 @@ newduba.cn###jq_youxi
 ||leadc4.icu^
 ||legdeh.fun^
 ||legopq.site^
+||lestv1.icu^
 ||lfjtiuy.cn^
 ||lgohse.fun^
 ||lgoseh.fun^
@@ -2073,6 +2080,7 @@ newduba.cn###jq_youxi
 ||oijmds.com^
 ||oiunga.com^
 ||okmhmkjnm.com^
+||okmhnd.com^
 ||one6u.xyz^
 ||oopej.xyz^
 ||ooqwc.xyz^
@@ -2211,6 +2219,7 @@ newduba.cn###jq_youxi
 ||txcv68f.com^
 ||ty8bz.com^
 ||u1022.com^
+||uchat6.com^
 ||uejdsw.com^
 ||uhwnrfu.cn^
 ||ujgf120.com^
@@ -2269,6 +2278,7 @@ newduba.cn###jq_youxi
 ||xhpghv.xyz^
 ||xiaoxiuapp.com^
 ||xiaoy.name^
+||xiezhuo038.cn^
 ||xixrdn.xyz^
 ||xjzyhp.xyz^
 ||xkmwxwy.cn^
@@ -7378,6 +7388,7 @@ $popup,third-party,domain=76fengyun.com|avsdown.com|downdv.com|downdvs.com|downh
 ||380.tw^$popup,third-party
 ||52av.be^$popup,third-party
 ||j8377.com^$popup
+||pemsrv.com^$popup
 ||slipdashedundermine.com^$popup
 ! Contains domain names
 ||1024mzs.pw^$popup,third-party
@@ -8066,6 +8077,8 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||8d8d.me/images/dealer.gif
 ||8jkx.com^
 ||8maple.ru/dzcm$rewrite=abp-resource:1x1-transparent-gif,domain=8maple.ru
+||8mg050.n3cdn1.secureserver.net^*.gif
+||8mg050.n3cdn1.secureserver.net^*/960
 ||8s8s.com/data/banner/
 ||8seaa.com/template/assets1/js/vue.js
 ||8xia.com/otherhtml/
@@ -11511,6 +11524,7 @@ hxsame.hexun.com$domain=~quote.hexun.com
 ||union.591.com.tw/cpt?
 ||union.china.com.cn^
 ||union.yihaodian.com^
+||unpkg.com/sejie
 ||untitled.dwstatic.com^
 ||uoowu.com/a/zh*.js
 ||uooyoo.com/hz/*str.js
@@ -14203,7 +14217,7 @@ u-car.com.tw##.contad
 dragon-guide.net##.container > .gutter:first-child
 zxzjtv.com##.container > .none
 ygdy8.cc##.container > a[href^="/"]
-sstv.fun##.container > a[target="_blank"] > img
+ssyy.ee##.container > a[target="_blank"] > img
 vpsdx.com##.container-fluid > .gsfha3 > .gsfha3
 78dm.net##.container-fluid > a[href*=".taobao.com"]
 ppys66.com##.container-slide + .container-slide
@@ -14271,6 +14285,7 @@ cnbeta.com##.ctcloud
 cupfox.app##.cupfox-box
 iqiyi.com##.cupid-panel + div
 tigtag.com##.custom-box02
+lzacg.one##.custom-html-widget
 boke112.com##.custom-html-widget > div[style="margin-bottom: -7px;"]
 51wangdai.com##.cx_ad
 51wangdai.com##.cx_xx_lis_c01_right_lis_c_ad
@@ -15854,6 +15869,7 @@ bbs.fobshanghai.com##.t_infoline
 douyu.com##.tab-content.promote
 chinatimes.com##.tab_4_box
 265g.com##.tab_imgtop
+wandhi.com##.table-bordered
 qqyouyue.com##.table-responsive
 eoof.net##.tableborder1[cellspacing="1"][cellpadding="3"]
 sina.com.tw##.tablet_above_ad
@@ -17511,7 +17527,7 @@ android-doc.com,apk.tw,chaojizhibo.net,chtoen.com,dizhishengcheng.com,doitwell.t
 @@/advertisement/*$domain=ininin.com|midea.com|muyingzhijia.com|nmkjxy.com
 @@/advertising/*$domain=315.sh.cn
 @@/adverts/*$domain=onlychild.cn
-@@/adview_pic_$domain=bigpixel.cn|itbaoku.cn|laimanhua.net|lfqie.com|lingjike.com|mahua.com|mati.hk|meiyouad.com|mh160.com|reh.tw|silisili.in|sssam.com|yanyue.cn|zgpingshu.com
+@@/adview_pic_$domain=bigpixel.cn|fffmo.com|itbaoku.cn|laimanhua.net|lfqie.com|lingjike.com|mahua.com|mati.hk|meiyouad.com|mh160.com|reh.tw|silisili.in|sssam.com|yanyue.cn|zgpingshu.com
 @@/advs/*$domain=ciros.com.cn|gotobuy.com.tw|sj-touch.com
 @@/adx.$domain=tanx.com
 @@/api/ad/*$domain=pinduoduo.com
@@ -19426,6 +19442,7 @@ smjb.net##div[style*="height: 50%"]
 ||kanshushi.com/yyddssdd.
 ||loli.net^$domain=xinqingdou.net
 ||meiguixs.net/images/*.js
+||myhaitang.cc/assets/public/*.js
 ||photo.*.html?tk=$script,third-party
 ||photo.*/native?tk=$third-party
 ||qianrenge.cc/qian/
